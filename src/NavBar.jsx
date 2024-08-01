@@ -49,7 +49,7 @@ const NavBar = ({ onButtonClick }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <AppBar position="static" sx={{}}>
-      <Toolbar sx={{ maxWidth: "1000px" }}>
+      <Toolbar sx={{ maxWidth: "1000px", alignSelf:"center" }}>
         {renderItems.map((renderItem) => (
           <Box
             sx={{

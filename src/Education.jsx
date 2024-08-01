@@ -2,12 +2,12 @@ import React from "react";
 import { Typography } from "@mui/material";
 import CenteredBox from "./CenteredBox";
 import Divider from "@mui/material/Divider";
-import "./styles.css"
+import "./styles.css";
 
 const Education = () => {
   return (
     <CenteredBox>
-      <h1 style={{ textAlign: "center" }}>Educationnn</h1>
+      <h1 style={{ textAlign: "center" }}>Education</h1>
       <Divider sx={{ my: 2 }} />
       <Typography variant="h3">Udemy</Typography>{" "}
       <Typography variant="h4">The Web Developer Bootcamp 2024</Typography>
@@ -35,9 +35,7 @@ const Education = () => {
         Universidad de San Carlos de Guatemala
       </Typography>{" "}
       <Typography variant="h4">Guatemala</Typography>{" "}
-      <Typography variant="h4">
-        Bachelor in Industrial Engineering
-      </Typography>
+      <Typography variant="h4">Bachelor in Industrial Engineering</Typography>
       <Typography variant="h4">2006(Jan) – 2012(Dec)</Typography>{" "}
       <p style={{ textAlign: "justify" }}>
         ▪ Technology, programming, Industry, Management. Math and Physics
