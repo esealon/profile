@@ -7,7 +7,7 @@ import "./styles.css"
 const Education = () => {
   return (
     <CenteredBox>
-      <h1 style={{ textAlign: "center" }}>Education</h1>
+      <h1 style={{ textAlign: "center" }}>Educationnn</h1>
       <Divider sx={{ my: 2 }} />
       <Typography variant="h3">Udemy</Typography>{" "}
       <Typography variant="h4">The Web Developer Bootcamp 2024</Typography>
