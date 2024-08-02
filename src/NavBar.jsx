@@ -13,6 +13,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@emotion/react";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import "./styles.css";
+import Container from "@mui/material/Container";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -49,40 +50,44 @@ const NavBar = ({ onButtonClick }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <AppBar position="static" sx={{}}>
-      <Toolbar sx={{ maxWidth: "1000px", alignSelf:"center" }}>
-        {renderItems.map((renderItem) => (
-          <Box
-            sx={{
-              margin: "0 auto",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
-            <div key={renderItem.id}>
-              {!isMobile && (
-                <Button
-                  sx={{}}
-                  color="inherit"
-                  onClick={() => onButtonClick(renderItem.text)}
-                >
-                  <Box id="NavButton">
-                    {renderItem.icon}
-                    {renderItem.title}
-                  </Box>
-                </Button>
-              )}
-              {isMobile && (
-                <Button
-                  color="inherit"
-                  onClick={() => onButtonClick(renderItem.text)}
-                >
-                  <Box id="NavButton">{renderItem.icon}</Box>
-                </Button>
-              )}
+      <Container maxWidth="md">
+        <Toolbar
+          sx={{
+            flexGrow: 1,
+            display: "flex",
+            justifyContent: "space-evenly",
+          }}
+        >
+          {renderItems.map((renderItem) => (
+            <div key={renderItem.id} sx={{}}>
+              <Box sx={{}}>
+                <div>
+                  {!isMobile && (
+                    <Button
+                      sx={{}}
+                      color="inherit"
+                      onClick={() => onButtonClick(renderItem.text)}
+                    >
+                      <Box id="NavButton">
+                        {renderItem.icon}
+                        {renderItem.title}
+                      </Box>
+                    </Button>
+                  )}
+                  {isMobile && (
+                    <Button
+                      color="inherit"
+                      onClick={() => onButtonClick(renderItem.text)}
+                    >
+                      <Box id="NavButton">{renderItem.icon}</Box>
+                    </Button>
+                  )}
+                </div>
+              </Box>
             </div>
-          </Box>
-        ))}
-      </Toolbar>
+          ))}
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 };
