@@ -60,7 +60,7 @@ const renderItems = [
   },
 ];
 
-const NavBar = ({ onButtonClick }) => {
+const NavBar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
