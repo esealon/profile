@@ -84,11 +84,7 @@ const NavBar = ({ onButtonClick }) => {
                 <Box sx={{}}>
                   <div>
                     {!isMobile && (
-                      <Button
-                        sx={{}}
-                        color="inherit"
-                        onClick={() => onButtonClick(renderItem.text)}
-                      >
+                      <Button sx={{}} color="inherit">
                         <Box id="NavButton">
                           {renderItem.icon}
                           {renderItem.title}
@@ -96,10 +92,7 @@ const NavBar = ({ onButtonClick }) => {
                       </Button>
                     )}
                     {isMobile && (
-                      <Button
-                        color="inherit"
-                        onClick={() => onButtonClick(renderItem.text)}
-                      >
+                      <Button color="inherit">
                         <Box id="NavButton">{renderItem.icon}</Box>
                       </Button>
                     )}
