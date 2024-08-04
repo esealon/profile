@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 a {
@@ -24,10 +25,16 @@ a:hover {
 
 body {
   margin: 0;
-  background-color: white;
+  background-color: #f2f8f8;
   padding: "0";
+  min-height: 100vh;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 25px;
+  font-style: normal;
+  color: #82b0cf;
 }
-
 
 button {
   border-radius: 8px;
@@ -60,5 +67,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-

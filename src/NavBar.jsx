@@ -66,7 +66,7 @@ const NavBar = () => {
 
   return (
     <Router>
-      <AppBar position="static" sx={{}}>
+      <AppBar position="static" sx={{ backgroundColor: "black", height:"50px", justifyContent:"center" }}>
         <Container maxWidth="md">
           <Toolbar
             sx={{

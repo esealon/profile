@@ -47,12 +47,12 @@ const WorkExperience = () => {
       </Typography>
       <Typography variant="h4">2020 (Oct) - 2022 (Aug)</Typography> <br />
       <Typography sx={{ fontWeight: "bold" }}>Responsible for:</Typography>
-      <Typography style={{ textAlign: "justify" }}>
+      <p style={{ textAlign: "justify" }}>
         Constant improvement of processes and implementation of new technologies
         inside Ericsson production, using Lean methodologies (DMAIC, IDDOV).
-      </Typography>
+      </p>
       <br />
-      <Typography sx={{ fontWeight: "bold" }}>Key achievements:</Typography>
+      <p sx={{ fontWeight: "bold" }}>Key achievements:</p>
       <Typography style={{ textAlign: "justify" }}>
         ▪ Successfully achieved the integration of collaborative robot (UR10)
         with glue cartages process into production with a yield of 95%

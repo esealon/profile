@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import { Grid, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import CenteredBox from "./CenteredBox";
+import Container from "@mui/material/Container";
 
 const Profile = () => {
   return (
@@ -18,6 +19,17 @@ const Profile = () => {
           such as Contec Industrial (Guatemala), Ericsson (Estonia), CMR
           Surgical (UK) and Nokia (UK).
         </p>
+        <Container maxWidth="lg">
+          <Box sx={{ p: 2, mt: 2 }}>
+            <Box sx={{ width: "100%", height: "auto", overflow: "hidden" }}>
+              <img
+                src="https://res.cloudinary.com/dvucxxtju/image/upload/v1722696515/Sergio_sc3on7.jpg"
+                alt="Responsive"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </Box>
+          </Box>
+        </Container>
       </CenteredBox>
     </>
   );
