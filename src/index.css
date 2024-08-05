@@ -11,7 +11,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
 }
 
 a {
@@ -28,12 +27,12 @@ body {
   background-color: #f2f8f8;
   padding: "0";
   min-height: 100vh;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-size: 25px;
+  font-weight: 00;
   font-style: normal;
   color: #82b0cf;
+  text-align: justify;
 }
 
 button {

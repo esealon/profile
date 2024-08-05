@@ -10,7 +10,6 @@ const CenteredBox = ({ children, ...props }) => {
         display: "flex",
         justifyContent: "center", // Center horizontally
         padding: "20px",
-        
       }}
     >
       <Paper
@@ -21,6 +20,7 @@ const CenteredBox = ({ children, ...props }) => {
           backgroundColor: "white",
           maxWidth: 1200, // Maximum width of the Paper
           borderRadius: 2, // Rounded corners
+          padding: "0 24px 24px 24px",
         }}
       >
         {children}

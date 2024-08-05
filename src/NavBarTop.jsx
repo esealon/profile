@@ -20,23 +20,32 @@ const theme = createTheme({
 export default function ButtonAppBar() {
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <AppBar
           position="static"
           sx={{
             backgroundColor: "#f2f8f8",
             height: "50px",
             justifyContent: "center",
-            
+            boxShadow: "none",
+            maxWidth: "800px",
+            alignSelf: "center",
           }}
         >
-          <Toolbar sx={{
+          <Toolbar
+            sx={{
               flexGrow: 1,
               display: "flex",
-            justifyContent:"space-between",
-          
-            }}>
-            <Box >
+              justifyContent: "space-between",
+            }}
+          >
+            <Box>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <a href="https://www.linkedin.com/in/sergio-alonzo-761347185/">
                   <LinkedInIcon
@@ -51,9 +60,8 @@ export default function ButtonAppBar() {
               </Typography>
             </Box>
             <Box className="HeaderTitle">
-                <>Sergio Alonzo</>
+              <>Sergio Alonzo</>
             </Box>
-      
           </Toolbar>
         </AppBar>
       </Box>
