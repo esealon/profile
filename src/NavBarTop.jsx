@@ -43,21 +43,20 @@ export default function ButtonAppBar() {
               flexGrow: 1,
               display: "flex",
               justifyContent: "space-between",
+              
             }}
           >
             <Box>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a href="https://www.linkedin.com/in/sergio-alonzo-761347185/">
-                  <LinkedInIcon
-                    sx={{
-                      color: "#0077B5",
-                      fontSize: "50px",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  />
-                </a>
-              </Typography>
+              <a href="https://www.linkedin.com/in/sergio-alonzo-761347185/">
+                <LinkedInIcon
+                  sx={{
+                    color: "#0077B5",
+                    fontSize: "50px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                />
+              </a>
             </Box>
             <Box className="HeaderTitle">
               <>Sergio Alonzo</>

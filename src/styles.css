@@ -46,6 +46,7 @@
   font-size: 25px;
   font-style: normal;
   color: #82b0cf;
+  
 }
 
 h3,
@@ -64,4 +65,8 @@ p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+.spaced-text {
+  line-height: 6; /* Adjust line spacing */
 }

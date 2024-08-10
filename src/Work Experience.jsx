@@ -88,15 +88,13 @@ const workData = [
   },
 ];
 
-
-
 const WorkExperience = () => {
   return (
     <CenteredBox>
       <h1 style={{ textAlign: "center" }}>Work Experience</h1>
       <Divider sx={{ my: 2 }} />
       {workData.map((workData) => (
-        <div >
+        <div>
           <h2>{workData.company}</h2>
           <h3>{workData.location}</h3>
           <h3>{workData.title}</h3>
@@ -125,20 +123,3 @@ const WorkExperience = () => {
 };
 
 export default WorkExperience;
-
-//
-//
-//
-//
-// <Typography variant="h3">Contec Industrial</Typography>{" "}
-// <Typography variant="h4">Guatemala</Typography>{" "}
-// <Typography variant="h4">
-//   Project Manager, crane kits division{" "}
-// </Typography>
-// <Typography variant="h4">2014 (May) - 2016 (July)</Typography> <br />
-// <Typography sx={{ fontWeight: "bold" }}>Key achievements:</Typography>
-// <Typography style={{ textAlign: "justify" }}>
-//   ▪ Successfully developed more than 20 mechanical machinery product
-//   projects for customers in Latin America and the Caribbeans, incurring on
-//   sales of more than 200,000.00 GBP/yearly
-// </Typography> */
