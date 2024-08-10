@@ -34,7 +34,7 @@ export default function ButtonAppBar() {
             height: "50px",
             justifyContent: "center",
             boxShadow: "none",
-            maxWidth: "800px",
+            maxWidth: "950px",
             alignSelf: "center",
           }}
         >

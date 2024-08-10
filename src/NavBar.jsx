@@ -22,7 +22,6 @@ import WorkExperience from "./Work Experience";
 import Education from "./Education";
 import Languages from "./languages";
 
-
 const renderItems = [
   {
     title: "Home",
@@ -69,68 +68,68 @@ const NavBar = () => {
     <Router>
       <Box
         sx={{
+          flexGrow: 1,
           display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
+          padding: "0 20px",
         }}
       >
         <AppBar
           position="static"
           sx={{
+            display: "flex",
             backgroundColor: "#6e6e6b",
             height: "50px",
             justifyContent: "center",
-            borderRadius: "16px",
-            maxWidth: "750px",
-            alignSelf: "center",
+            borderRadius: 2,
+            maxWidth: "950px",
+            padding: "40px 0",
+            margin: "10px",
           }}
         >
-          <Container maxWidth="md">
-            <Toolbar
-              sx={{
-                flexGrow: 1,
-                display: "flex",
-                justifyContent: "space-evenly",
-              }}
-            >
-              {renderItems.map((renderItem) => (
-                <Link
-                  key={renderItem.id}
-                  to={renderItem.path}
-                  style={{ color: "inherit", textDecoration: "none" }}
-                >
-                  <Box sx={{}}>
-                    <div>
-                      {!isMobile && (
-                        <Button sx={{}} color="inherit">
-                          <Box id="NavButton">
-                            {renderItem.icon}
-                            {renderItem.title}
-                          </Box>
-                        </Button>
-                      )}
-                      {isMobile && (
-                        <Button color="inherit">
-                          <Box id="NavButton">{renderItem.icon}</Box>
-                        </Button>
-                      )}
-                    </div>
-                  </Box>
-                </Link>
-              ))}
-            </Toolbar>
-          </Container>
+          <Toolbar
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            {renderItems.map((renderItem) => (
+              <Link
+                key={renderItem.id}
+                to={renderItem.path}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <Box sx={{}}>
+                  <div>
+                    {!isMobile && (
+                      <Button sx={{}} color="inherit">
+                        <Box id="NavButton">
+                          {renderItem.icon}
+                          {renderItem.title}
+                        </Box>
+                      </Button>
+                    )}
+                    {isMobile && (
+                      <Button color="inherit">
+                        <Box id="NavButton">{renderItem.icon}</Box>
+                      </Button>
+                    )}
+                  </div>
+                </Box>
+              </Link>
+            ))}
+          </Toolbar>
         </AppBar>
-
-        <Routes>
-          <Route path="profile/" element={<Home />} />
-          <Route path="profile/profile" element={<Profile />} />
-          <Route path="profile/work_experience" element={<WorkExperience />} />
-          <Route path="profile/education" element={<Education />} />
-          <Route path="profile/languages" element={<Languages />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
       </Box>
+      <Routes>
+        <Route path="profile/" element={<Home />} />
+        <Route path="profile/profile" element={<Profile />} />
+        <Route path="profile/work_experience" element={<WorkExperience />} />
+        <Route path="profile/education" element={<Education />} />
+        <Route path="profile/languages" element={<Languages />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
     </Router>
   );
 };
