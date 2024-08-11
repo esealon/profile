@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import CenteredBox from "./CenteredBox";
 import Divider from "@mui/material/Divider";
 import { v4 as uuidv4 } from "uuid";
+import NavBarProjects from "./NavBarProjects";
 
 const workData = [
   {
@@ -90,35 +91,38 @@ const workData = [
 
 const WorkExperience = () => {
   return (
-    <CenteredBox>
-      <h1 style={{ textAlign: "center" }}>Work Experience</h1>
-      <Divider sx={{ my: 2 }} />
-      {workData.map((workData) => (
-        <div>
-          <h2>{workData.company}</h2>
-          <h3>{workData.location}</h3>
-          <h3>{workData.title}</h3>
-          <h3>{workData.time}</h3>{" "}
-          <>
-            {workData.info ? (
-              <p style={{ textAlign: "justify" }}>{workData.info}</p>
-            ) : (
-              <div key={workData.id}>
-                <br />
-                <h3 sx={{ fontWeight: "bold" }}>Responsible for:</h3>
-                <p>{workData.responsible}</p>
-                <br />
-                <h3 sx={{ fontWeight: "bold" }}>Key Achievements:</h3>
-                {workData.objectives.map((line, index) => (
-                  <p>{line}</p>
-                ))}
-              </div>
-            )}
-          </>
-          <Divider sx={{ my: 2 }} />
-        </div>
-      ))}
-    </CenteredBox>
+    <>
+      <NavBarProjects />
+      <CenteredBox>
+        <h1 style={{ textAlign: "center" }}>Work Experience</h1>
+        <Divider sx={{ my: 2 }} />
+        {workData.map((workData) => (
+          <div>
+            <h2>{workData.company}</h2>
+            <h3>{workData.location}</h3>
+            <h3>{workData.title}</h3>
+            <h3>{workData.time}</h3>{" "}
+            <>
+              {workData.info ? (
+                <p style={{ textAlign: "justify" }}>{workData.info}</p>
+              ) : (
+                <div key={workData.id}>
+                  <br />
+                  <h3 sx={{ fontWeight: "bold" }}>Responsible for:</h3>
+                  <p>{workData.responsible}</p>
+                  <br />
+                  <h3 sx={{ fontWeight: "bold" }}>Key Achievements:</h3>
+                  {workData.objectives.map((line, index) => (
+                    <p>{line}</p>
+                  ))}
+                </div>
+              )}
+            </>
+            <Divider sx={{ my: 2 }} />
+          </div>
+        ))}
+      </CenteredBox>
+    </>
   );
 };
 

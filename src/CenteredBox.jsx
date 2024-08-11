@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
-import { GlobalStyles } from "@mui/material";
+
 
 const CenteredBox = ({ children, ...props }) => {
   return (
@@ -19,7 +19,7 @@ const CenteredBox = ({ children, ...props }) => {
           padding: 3,
           backgroundColor: "white",
           width: 900,
-           // Maximum width of the Paper
+          // Maximum width of the Paper
           borderRadius: 2, // Rounded corners
           padding: "0 24px 24px 24px",
         }}

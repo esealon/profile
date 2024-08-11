@@ -5,10 +5,12 @@ import { Grid, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import CenteredBox from "./CenteredBox";
 import Container from "@mui/material/Container";
+import NavBarProjects from "./NavBarProjects";
 
 const Profile = () => {
   return (
     <>
+    <NavBarProjects />
       <CenteredBox>
         <h1 style={{ textAlign: "center" }}>Profile</h1>
         <Divider sx={{ my: 2 }} />

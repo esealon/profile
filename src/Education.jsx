@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import CenteredBox from "./CenteredBox";
 import Divider from "@mui/material/Divider";
 import "./styles.css";
+import NavBarProjects from "./NavBarProjects";
 
 const educationData = [
   {
@@ -30,22 +31,23 @@ const educationData = [
 
 const Education = () => {
   return (
-    <CenteredBox>
-      <h1 style={{ textAlign: "center" }}>Education</h1>
-      <Divider sx={{ my: 2 }} />
-      {educationData.map((educationData) => (
-        <>
-          <h2>{educationData.name}</h2>
-          <h3>{educationData.place}</h3>
-          <h3>{educationData.title}</h3>
-          <h3>{educationData.time}</h3>{" "}
-          <p>{educationData.info}</p>
-          <Divider sx={{ my: 2 }} />
-        </>
-      ))}
-    </CenteredBox>
+    <>
+      <NavBarProjects />
+      <CenteredBox>
+        <h1 style={{ textAlign: "center" }}>Education</h1>
+        <Divider sx={{ my: 2 }} />
+        {educationData.map((educationData) => (
+          <>
+            <h2>{educationData.name}</h2>
+            <h3>{educationData.place}</h3>
+            <h3>{educationData.title}</h3>
+            <h3>{educationData.time}</h3> <p>{educationData.info}</p>
+            <Divider sx={{ my: 2 }} />
+          </>
+        ))}
+      </CenteredBox>
+    </>
   );
 };
 
 export default Education;
-

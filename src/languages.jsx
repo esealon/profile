@@ -13,6 +13,7 @@ import {
   Paper,
 } from "@mui/material";
 import "./styles.css";
+import NavBarProjects from "./NavBarProjects";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -25,6 +26,7 @@ const langItems = [
 const Languages = () => {
   return (
     <>
+    <NavBarProjects />
       <CenteredBox>
         <div className="main-page">
           <h1 style={{ textAlign: "center" }}>Languages</h1>
