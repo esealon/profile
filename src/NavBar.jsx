@@ -65,7 +65,7 @@ const NavBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Router>
+    <Router basename="/profile/">
       <Box
         sx={{
           flexGrow: 1,
