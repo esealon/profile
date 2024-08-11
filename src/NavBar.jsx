@@ -65,7 +65,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Router basename="/profile/">
+      <Router>
 
         <Box
           sx={{
@@ -112,7 +112,7 @@ const NavBar = () => {
                         </Button>
                       )}
                       {isMobile && (
-                        <Button color="inherit">
+                        <Button sx={{}} color="inherit">
                           <Box id="NavButton">{renderItem.icon}</Box>
                         </Button>
                       )}

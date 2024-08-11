@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <NavBarProjects />
+      
       <Intro />
 
       <Myself />

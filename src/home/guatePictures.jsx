@@ -26,7 +26,7 @@ const GuatePictures = () => {
           <Collapse in={open2}>
             <Container maxWidth="lg">
               <Box sx={{ p: 2, mt: 2 }}>
-                <p className="titlePicture">Antigua Guatemala:</p>
+                <p className="titlePicture">Antigua Guatemala</p>
                 <Box sx={{ width: "100%", height: "auto", overflow: "hidden" }}>
                   <img
                     src="https://res.cloudinary.com/dvucxxtju/image/upload/v1723306449/20220321_120623_trjlnu.jpg"
@@ -47,7 +47,7 @@ const GuatePictures = () => {
                     }}
                   />
                 </Box>
-                <p className="titlePicture">Guatemala City:</p>
+                <p className="titlePicture">Guatemala City</p>
                 <Box sx={{ width: "100%", height: "auto", overflow: "hidden" }}>
                   <img
                     src="https://res.cloudinary.com/dvucxxtju/image/upload/v1723306450/20221212_104105_2_rmvy6r.jpg"
@@ -58,7 +58,7 @@ const GuatePictures = () => {
                       borderRadius: "4px",
                     }}
                   />
-                  <p className="titlePicture">Ciudad Cayala, Guatemala City:</p>
+                  <p className="titlePicture">Ciudad Cayala, Guatemala City</p>
                 </Box>
                 <Box sx={{ width: "100%", height: "auto", overflow: "hidden" }}>
                   <img

@@ -1,25 +1,24 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/material";
-
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@emotion/react";
-
 import "./styles.css";
-
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Projects from "./projects/Projects";
 
 const NavBarProjects = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
+const handleClick = () => {
+  <Projects />
+}
+
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
     >
-      <Button
+      <Button onClick={handleClick}
         variant="contained"
         sx={{
           display: "flex",
@@ -27,7 +26,10 @@ const NavBarProjects = () => {
           width: "250px",
           backgroundColor: "#D09683",
           fontFamily: "Quicksand",
-          fontSize:"20px"
+          fontSize: "20px",
+          "&:hover": {
+            backgroundColor: "#330000",
+          },
         }}
       >
         Projects

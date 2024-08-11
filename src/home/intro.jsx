@@ -13,7 +13,7 @@ const Intro = () => {
         <p style={{ textAlign: "justify" }}>
           Here you will find different type of information about myself, my work
           experience, education and specially the things I can do in programming
-          on the "my projects" area.
+          on the "Projects" area.
         </p>
       </CenteredBox>
     </>

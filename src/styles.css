@@ -14,12 +14,12 @@
 
 #NavButton {
   display: flex;
- 
+  justify-content: center;
   align-items: center;
   width: 100%;
   font-size: 15px;
   gap: 20;
-  font-family: "Quicksand"
+  font-family: "Quicksand";
 }
 
 #NavButtonMobile {
@@ -47,7 +47,6 @@
   font-size: 25px;
   font-style: normal;
   color: #82b0cf;
-  
 }
 
 h3,
@@ -72,8 +71,8 @@ p {
   line-height: 6; /* Adjust line spacing */
 }
 
-.titlePicture{
-  font-weight:bold;
+.titlePicture {
+  font-weight: bold;
   text-align: center;
-  font-size:20px
+  font-size: 20px;
 }
