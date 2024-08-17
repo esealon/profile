@@ -18,8 +18,14 @@ import Profile from "./Profile";
 import WorkExperience from "./Work Experience";
 import Education from "./Education";
 import Languages from "./languages";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faUser, faBriefcase, faUserGraduate, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faUser,
+  faBriefcase,
+  faUserGraduate,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 
 const renderItems = [
   {
@@ -32,28 +38,28 @@ const renderItems = [
   {
     title: "Profile",
     text: "Profile",
-    icon: <FontAwesomeIcon icon={faUser} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faUser} size="lg" />,
     id: uuidv4(),
     path: "profile/profile",
   },
   {
     title: "Work Experience",
     text: "WorkExperience",
-    icon: <FontAwesomeIcon icon={faBriefcase} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faBriefcase} size="lg" />,
     id: uuidv4(),
     path: "profile/work_experience",
   },
   {
     title: "Education",
     text: "Education",
-    icon: <FontAwesomeIcon icon={faUserGraduate} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faUserGraduate} size="lg" />,
     id: uuidv4(),
     path: "profile/education",
   },
   {
     title: "Languages",
     text: "Languages",
-    icon: <FontAwesomeIcon icon={faGlobe} size="lg"/>,
+    icon: <FontAwesomeIcon icon={faGlobe} size="lg" />,
     id: uuidv4(),
     path: "profile/languages",
   },
@@ -66,7 +72,6 @@ const NavBar = () => {
   return (
     <>
       <Router>
-
         <Box
           sx={{
             flexGrow: 1,
@@ -112,7 +117,7 @@ const NavBar = () => {
                         </Button>
                       )}
                       {isMobile && (
-                        <Button sx={{}} color="inherit">
+                        <Button sx={{ minWidth: "0" }} color="inherit">
                           <Box id="NavButton">{renderItem.icon}</Box>
                         </Button>
                       )}
