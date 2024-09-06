@@ -38,8 +38,8 @@ body {
   background-image: url("https://res.cloudinary.com/dvucxxtju/image/upload/v1725569947/pexels-fwstudio-33348-168452_ghe5qm.jpg");
   background-size: cover; /* Make sure the image covers the whole page */
   background-attachment: fixed;
-  background-position: center; /* Center the background image */
-  background-size: 100% auto; /* Ensure the background covers full viewport height */
+   /* Center the background image */
+   /* Ensure the background covers full viewport height */
 }
 
 button {
