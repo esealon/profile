@@ -42,10 +42,9 @@ const Myself = () => {
               Thanks to my dad I started visiting United States since I was 13
               years old, since my very first trip I decided I wanted to live
               there. I prepared myself by learning English and studying very
-              hard at school, but the opportunity never came, I tried for 10
-              years. I was already an engineer and working in Guatemala when the
-              opportunity to go on a scholarship to Europe while studying the
-              masters came to me.
+              hard at school, but the opportunity never came. I was already an
+              engineer and working in Guatemala when the opportunity to go on a
+              scholarship to Europe while studying the masters came to me.
             </p>
             <p style={{ height: "10px" }}></p>
             <p>

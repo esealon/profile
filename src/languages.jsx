@@ -1,8 +1,6 @@
 import React from "react";
-
 import CenteredBox from "./CenteredBox";
 import Divider from "@mui/material/Divider";
-import Box from "@mui/material/Box";
 import {
   Table,
   TableBody,
@@ -26,7 +24,7 @@ const langItems = [
 const Languages = () => {
   return (
     <>
-    <NavBarProjects />
+      <NavBarProjects />
       <CenteredBox>
         <div className="main-page">
           <h1 style={{ textAlign: "center" }}>Languages</h1>
@@ -35,7 +33,7 @@ const Languages = () => {
           <TableContainer
             component={Paper}
             sx={{
-              width: "300px",
+              width: "250px",
               maxHeight: "500px",
               margin: "0 auto",
               boxShadow: 3,
@@ -52,8 +50,8 @@ const Languages = () => {
               {langItems.map((langItem) => (
                 <TableBody key={langItem.id}>
                   <TableRow>
-                    <TableCell>{langItem.name}</TableCell>
-                    <TableCell>{langItem.level}</TableCell>
+                    <TableCell id="Center">{langItem.name}</TableCell>
+                    <TableCell id="Center">{langItem.level}</TableCell>
                   </TableRow>
                 </TableBody>
               ))}

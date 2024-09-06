@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <>
       <CenteredBox>
-        <h1>Welcome to my WebPage</h1>
+        <h1 id="Center">Welcome to my WebPage</h1>
         <Divider sx={{ my: 2 }} />
 
         <p style={{ textAlign: "justify" }}>

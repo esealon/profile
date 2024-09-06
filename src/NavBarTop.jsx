@@ -30,23 +30,18 @@ export default function ButtonAppBar() {
         <AppBar
           position="static"
           sx={{
-            backgroundColor: "#f2f8f8",
-            height: "50px",
+            backgroundColor: "transparent",
+            height: "70px",
+            margin: "10px 0 0 0",
             justifyContent: "center",
             boxShadow: "none",
             maxWidth: "950px",
             alignSelf: "center",
+            alignItems: "center",
           }}
         >
-          <Toolbar
-            sx={{
-              flexGrow: 1,
-              display: "flex",
-              justifyContent: "space-between",
-              
-            }}
-          >
-            <Box>
+          <Toolbar sx={{ gap: "15px" }}>
+            <Box sx={{ backgroundColor: "white", borderRadius: 2 }}>
               <a href="https://www.linkedin.com/in/sergio-alonzo-761347185/">
                 <LinkedInIcon
                   sx={{

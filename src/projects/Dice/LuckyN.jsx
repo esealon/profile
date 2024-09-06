@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getRolls, sum } from "./utils";
 import Dice from "./Dice";
-// import Button from "./Button";
+import Button from "./Button";
 
 //In the following code, we are setting goal to 7 and that is how you win the game
 // function LuckyN({ numDice = 2, goal = 7 }) {

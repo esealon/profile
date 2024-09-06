@@ -2,6 +2,7 @@
   text-align: center;
   font-weight: bold;
   font-size: medium;
+  font-size: 20px;
 }
 
 #Center {
@@ -20,6 +21,7 @@
   font-size: 15px;
   gap: 0;
   font-family: "Quicksand";
+  gap: 8px;
 }
 
 #NavButtonMobile {
@@ -44,9 +46,10 @@
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-optical-sizing: auto;
   font-weight: 100;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
-  color: #82b0cf;
+  color: #d6dedf;
+  font-weight: 500;
 }
 
 h3,

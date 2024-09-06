@@ -10,7 +10,7 @@ const CenteredBox = ({ children, ...props }) => {
       sx={{
         display: "flex",
         justifyContent: "center", // Center horizontally
-        padding: "20px",
+        padding: "15px",
       }}
     >
       <Paper

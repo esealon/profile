@@ -10,15 +10,16 @@ const NavBarProjects = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-const handleClick = () => {
-  <Projects />
-}
+  const handleClick = () => {
+    return <p>Hello</p>;
+  };
 
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
     >
-      <Button onClick={handleClick}
+      <Button
+        onClick={handleClick}
         variant="contained"
         sx={{
           display: "flex",

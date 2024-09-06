@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import NavBarTop from "./NavBarTop";
 import NavBarProjects from "./NavBarProjects";
 import LuckyN from "./projects/Dice/LuckyN";
+import { sum } from "./projects/Dice/utils";
 
 function lessThan4(dice) {
   return sum(dice) < 4;
@@ -18,8 +19,8 @@ function App() {
     <>
       <NavBarTop />
       <NavBar />
-      {/* <LuckyN winCheck={lessThan4} title='Roll less than 4'/>
-      <LuckyN winCheck={allSameValue} title='Roll all equal'/> */}
+      {/* <LuckyN winCheck={lessThan4} title="Roll less than 4" />
+      <LuckyN winCheck={allSameValue} title="Roll all equal" /> */}
     </>
   );
 }
