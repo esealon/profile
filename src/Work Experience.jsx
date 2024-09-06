@@ -4,6 +4,7 @@ import CenteredBox from "./CenteredBox";
 import Divider from "@mui/material/Divider";
 import { v4 as uuidv4 } from "uuid";
 import NavBarProjects from "./NavBarProjects";
+import { Margin } from "@mui/icons-material";
 
 const workData = [
   {
