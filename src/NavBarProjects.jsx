@@ -4,7 +4,6 @@ import { Box } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@emotion/react";
 import "./styles.css";
-import Projects from "./projects/Projects";
 
 const NavBarProjects = () => {
   const theme = useTheme();
