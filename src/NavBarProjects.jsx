@@ -11,7 +11,7 @@ const NavBarProjects = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleClick = () => {
-    return <p>Hello</p>;
+    window.location.href = "https://esealon.github.io/projects/";
   };
 
   return (
