@@ -20,7 +20,7 @@ const Myself = () => {
             <p>Collapse text</p>
           ) : (
             <p>
-              If you want to to know a little bit about myself, click here...
+              If you want to know a little bit about myself, click here...
             </p>
           )}
 
