@@ -97,7 +97,7 @@ const Myself = () => {
               working in the UK (London) for more than 2 years and loving every
               minute of it. The variety of people you can find and things you
               can do here are just great. I am working as an Engineer in a great
-              company.{" "}
+              company. {" "}
             </p>
             <p style={{ height: "10px" }}></p>
             <p>
