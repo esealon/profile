@@ -10,16 +10,16 @@ import NavBarProjects from "./NavBarProjects";
 const Profile = () => {
   return (
     <>
-    <NavBarProjects />
+      <NavBarProjects />
       <CenteredBox>
         <h1 style={{ textAlign: "center" }}>Profile</h1>
         <Divider sx={{ my: 2 }} />
 
         <p style={{ textAlign: "justify" }}>
           Web developer, quality assurance and project development engineer with
-          9 years of experience in the tech sector in mass production companies,
-          such as Contec Industrial (Guatemala), Ericsson (Estonia), CMR
-          Surgical (UK) and Nokia (UK)
+          10 years of experience in the tech sector in mass production
+          companies, such as Contec Industrial (Guatemala), Ericsson (Estonia),
+          CMR Surgical (UK) and Nokia (UK)
         </p>
         <Container maxWidth="lg">
           <Box sx={{ p: 2, mt: 2 }}>

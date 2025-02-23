@@ -8,22 +8,20 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        display: "flex",
-        justifyContent: 'flex-start',
+      
+
         py: 2,
         backgroundColor: (theme) =>
           theme.palette.mode === "light" ? "#f1f1f1" : "#2c2c2c",
         boxShadow: "0 -2px 5px rgba(0, 0, 0, 0.1)", // Optional: Adds a subtle shadow
       }}
     >
-      <Container sx={{width: '10%', padding: 0}}>
-        <IconButton
-          href="https://github.com/esealon" 
-        >
+      <Container sx={{ width: "10%", padding: 0, position: "absolute" }}>
+        <IconButton href="https://github.com/esealon">
           <GitHubIcon />
         </IconButton>
       </Container>
-      <Container sx={{ }}>
+      <Container sx={{}}>
         <Typography variant="body1" align="center">
           © {new Date().getFullYear()} ESEALON
         </Typography>
